@@ -26,6 +26,7 @@ void Integration::Set(not_null<Integration*> instance) {
 	if constexpr (Platform::IsWindows()) {
 		GL::ConfigureANGLE();
 	}
+	return;
 }
 
 Integration &Integration::Instance() {
